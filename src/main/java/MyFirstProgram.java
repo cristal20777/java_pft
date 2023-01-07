@@ -1,22 +1,27 @@
 public class MyFirstProgram {
 
   public static void main(String[] args) {
+    hello("world");
+    hello("user");
+    hello("Kris");
 
-		System.out.println("Hello, world!");
+    double l = 5;
+    System.out.println("Площадь квадрата со стороной len " + l + " = " + area(l));
 
-		System.out.println(2 + 2);
-		System.out.println(2 * 2);
-		System.out.println(2 / 2);
-		System.out.println(2 - 2);
-
-		System.out.println(1 / 2);
-		System.out.println(1.0 / 2);
-		System.out.println(1 / 2.0);
-
-		System.out.println("2" + "2");
-		System.out.println("2" + 2);
-    System.out.println(2 + 2 * 2);
+    double a = 5;
+    double b = 6;
+    System.out.println("Площадь прямоугольника со сторонами " + a + " и " + b + " = "+ area (a,b));
   }
 
+  public static void hello(String somebody) {
+    System.out.println("Hello, " + somebody + "!");
+  }
+
+  public static double area(double len) {
+    return len * len;
+  }
+  public static double area(double a, double b){
+    return a * b;
+  }
 }
 
